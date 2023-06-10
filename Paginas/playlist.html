@@ -20,7 +20,7 @@
 <body>
 
     <header class="fondoLila">
-        <nav>
+        <nav class="header-desktop">
             <ul>
                 <li><a href="../index.html">cuarteto de nos</a></li>
                 <li><a href="maps.html">maps</a></li>
@@ -29,6 +29,59 @@
                 <li>playlist</a></li>
             </ul>
         </nav>
+        <nav class="header-responsive">
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu fonts-navbar" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item"  href="../index.html">tes</a></li>
+                    <li><a  class="dropdown-item"href="maps.html">maps</a></li>
+                    <li><a  class="dropdown-item"href="integrantes.html">integrantes</a></li>
+                    <li><a class="dropdown-item" href="biografia.html">biografia</a></li>
+                    <li><a class="dropdown-item" href="#">Playlist</a></li>
+                </ul>
+              </div>
+        </nav>
+
+
+    <style>
+        .header-responsive {
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
+        }
+        @media screen and (max-width: 480px) {
+            .header-desktop {
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+            }
+            .header-responsive {
+
+            visibility: visible;
+            width: 200px;
+            max-height: 150px;
+        }
+        ul li {
+            margin-top: 0px;
+            padding: 1rem;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            text-decoration: underline;
+            text-decoration-color: aquamarine;
+            text-transform: capitalize;
+        }
+        a {
+            font-size: 15px;
+         
+        }
+}
+
+    </style>
     </header>
 
     <h1>playlist</h1>

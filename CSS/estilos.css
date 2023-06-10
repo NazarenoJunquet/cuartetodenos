@@ -17,15 +17,18 @@ p{
     background-image: url("../Imagenes/cuarteto\ de\ nos.jpg");
     background-size: cover;
     height:500px;
-    width: auto;
+
 }
 
+ul{margin-bottom: 2rem;
+padding-bottom:  2rem;
+}
 ul li{
     list-style-type: circle;
     font-weight: bold; 
     font-size: 3rem;
     display: inline-block;
-    margin-top: 41rem;
+    margin-top: 38rem;
     padding: 4rem;
 }
 
@@ -40,7 +43,10 @@ a{
     text-decoration: none;
     font-size: 4rem;
 }
-
+a:active {
+    text-decoration-color: red;
+    color: red
+}
 p{
     font-size: 1.5rem;
 }
@@ -83,6 +89,11 @@ p{
         height: 500px;
         width: auto;
     }
+    .header-responsive {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -98,9 +109,35 @@ p{
         height: 150px;
         width: auto;
     }
+    .header-desktop {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .header-responsive {
+
+    visibility: visible;
+    width: 200px;
+    max-height: 150px;
+}
+ul li {
+    margin-top: 0px;
+    padding: 1rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-transform: capitalize;
+}
+a {
+    font-size: 15px;
+ 
+}
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 540px){
     .containerLefth{
         display: flex;
         flex-direction: row;
@@ -114,8 +151,26 @@ p{
         height: 500px;
     }
     .fondoLila{
-        height: auto;
-        width: auto;
+        height: 400px;
+    }
+    ul li {
+        margin-top: 30rem;
+        padding: 1rem;
+        font-size: 15px;
+
+        border-radius: 15px;
+        text-decoration: underline;
+        text-decoration-color: aquamarine;
+        text-transform: capitalize;
+    }
+    a {
+        font-size: 15px;
+     
+    }
+    .header-responsive {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
     }
 }
 
