@@ -1,3 +1,122 @@
+.container div {
+  display: flex;
+  padding: 0px 10px 15px 10px;
+}
+
+div, img, p, h2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 1020px) {
+  .containerLefth {
+    display: flex;
+    flex-direction: row;
+  }
+  .containerRight {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .container div img {
+    width: 650px;
+    height: 500px;
+  }
+  .fondoLila {
+    height: 500px;
+    width: auto;
+  }
+  .header-responsive {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .containerLefth {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerRight {
+    display: flex;
+    flex-direction: column;
+  }
+  .fondoLila {
+    height: 150px;
+    width: auto;
+  }
+  .header-desktop {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+  .header-responsive {
+    visibility: visible;
+    width: 200px;
+    max-height: 150px;
+  }
+  ul li {
+    margin-top: 0px;
+    padding: 1rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-transform: capitalize;
+  }
+  a {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .containerLefth {
+    display: flex;
+    flex-direction: row;
+  }
+  .containerRight {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .container img {
+    width: 400px;
+    height: 500px;
+  }
+  .fondoLila {
+    height: 400px;
+  }
+  ul li {
+    margin-top: 30rem;
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 15px;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-transform: capitalize;
+  }
+  a {
+    font-size: 15px;
+  }
+  .header-responsive {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+.animate__animated {
+  animation-iteration-count: infinite;
+}
+
 /*configuracion de html*/
 html {
   font-size: 62.5%; /*YA NO ES EL 100%*/
