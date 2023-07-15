@@ -9,8 +9,7 @@
 
     <link rel="shortcut icon" href="../Imagenes/channels4_profile.jpg" type="image/x-icon">
 
-    <link rel="stylesheet" href="../CSS/estilos.css">
-
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;500;700;900&display=swap" rel="stylesheet">
@@ -26,32 +25,30 @@
 
 <body>
 
-    <header class="fondoLila">
-        <nav class="header-desktop">
-            <ul>
+    <header >
+        <nav>
+            <ul class="navDeskt">
                 <li><a href="../index.html">cuarteto de nos</a></li>
                 <li><a href="maps.html">maps</a></li>
                 <li><a href="integrantes.html">integrantes</a></li>
                 <li><a href="biografia.html">biografia</a></li>
                 <li><a href="playlist.html">playlist</a></li>
             </ul>
-        </nav>
-        <nav class="header-responsive">
-
+    <div class="header-responsive">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  menu desplegable
+                  Menu
                 </button>
                 <ul class="dropdown-menu fonts-navbar" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item"  href="../index.html">cuarteto de nos</a></li>
-                    <li><a  class="dropdown-item"href="maps.html">maps</a></li>
-                    <li><a  class="dropdown-item"href="integrantes.html">integrantes</a></li>
+                    <li><a  class="dropdown-item"href=".maps.html">maps</a></li>
+                    <li><a  class="dropdown-item"href=".integrantes.html">integrantes</a></li>
                     <li><a class="dropdown-item" href="biografia.html">biografia</a></li>
-                    <li><a class="dropdown-item" href="playlist.html">Playlist</a></li>
+                    <li><a class="dropdown-item"href="playlist.html">playlist</a></li>
                 </ul>
               </div>
+            </div>
         </nav>
-
     </header>
 
     <h1 class="titulo2">Integrantes - Cuarteto De Nos</h1>
@@ -59,9 +56,9 @@
     <main>
         <section class="container">
             <div class="containerLefth">
-                <img  src="../Imagenes/Roberto.musso.jpg" alt="roberto musso">
+                <img  src="../Imagenes/robertomusso.jpg" alt="roberto musso">
                 <div>
-                <h2>biografia</h2>
+                <h2>Biografia</h2>
                 <p>Roberto Musso nacio el 21 de Noviembre de 1961 en Montevideo y crecio junto a su hermano menor
                     Ricardo Musso, escuchando a los Beatles, banda la cual eran fanaticos y que los influyo a ser
                     musicos. Estudio en la escuela y liceo Elbio Fernandez. </p>
@@ -87,7 +84,7 @@
             </div>
 
             <div class="containerRight">
-            <img src="../Imagenes/Santiago.tavella.jpg" alt="santiago tavella">
+            <img src="../Imagenes/santiagotavella.jpg" alt="santiago tavella">
                 
                 <div>
                 <h2>Biografia</h2>
@@ -119,7 +116,7 @@
             </div>
 
             <div class="containerLefth">
-                <img  src="../Imagenes/Ricardo.musso" alt="ricardo musso">
+                <img  src="../Imagenes/ricardomusso.jpg" alt="ricardo musso">
 
                 <div>
                 <h2>Trayectoria</h2>
@@ -157,7 +154,7 @@
                     </div>
             
             <div class="containerRight">
-                <img  src="../Imagenes/Gustavo antuña.jpg" alt="gustavo acuña">
+                <img  src="../Imagenes/gustavoantuna.jpg" alt="gustavo acuña">
                 <div>
                 <p>Lamentablemente no se han encontrado datos sobre Gustavo antuña.</p>
                     </div>
@@ -194,7 +191,7 @@
             </div>
             
             <div class="containerRight">
-                <img  src="../Imagenes/Santiago marrero.jpg" alt="santiago marrero">
+                <img  src="../Imagenes/Santiagomarrero.jpg" alt="santiago marrero">
                 <div>
                     <h2>Biografia</h2>
                     <p>Santiago Marrero nacio el 25 de enero de 1986 en Montevideo y crecio junto a su hermana mayor, durante su infancia
@@ -230,6 +227,34 @@
 
         </section>
     </main>
+    <footer class="bg-footer">
+        <section>
+        <nav class="header-desktop">
+            <ul>
+                <li><a href="index.html">cuarteto de nos</a></li>
+                <li><a href="./Paginas/maps.html">maps</a></li>
+                <li><a href="./Paginas/integrantes.html">integrantes</a></li>
+                <li><a href="./Paginas/biografia.html">biografia</a></li>
+                <li><a href="./Paginas/playlist.html">playlist</a></li>
+            </ul>
+        </div>
+        </nav>
+    </section>
+        <nav class="bg-footer header-responsive">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  menu desplegable
+                </button>
+                <ul class="dropdown-menu fonts-navbar" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item"  href="../index.html">Cuarteto de nos</a></li>
+                    <li><a  class="dropdown-item"href=".maps.html">maps</a></li>
+                    <li><a  class="dropdown-item"href=".integrantes.html">integrantes</a></li>
+                    <li><a class="dropdown-item" href=".biografia.html">biografia</a></li>
+                    <li><a class="dropdown-item"href=".playlist.html">playlist</a></li>
+                </ul>
+              </div>
+        </nav>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     
 </body>

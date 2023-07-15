@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="Imagenes/channels4_profile.jpg" type="image/x-icon">
 
     <!--css-->
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,22 +29,20 @@
     <!--keywords-->
     <meta name="keywords" content="cuarteto de nos, historia, su debut, soy una arveja, reconocimiento mundial.">
 </head>
-
-<header class="fondoLila">
-    <nav class="header-desktop">
-        <ul>
+<body >
+<header >
+    <nav>
+        <ul class="navDeskt">
             <li><a href="index.html">cuarteto de nos</a></li>
             <li><a href="./Paginas/maps.html">maps</a></li>
             <li><a href="./Paginas/integrantes.html">integrantes</a></li>
             <li><a href="./Paginas/biografia.html">biografia</a></li>
             <li><a href="./Paginas/playlist.html">playlist</a></li>
         </ul>
-    </nav>
-    <nav class="header-responsive">
-
+<div class="header-responsive">
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              menu desplegable
+              Menu
             </button>
             <ul class="dropdown-menu fonts-navbar" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item"  href="index.html">cuarteto de nos</a></li>
@@ -54,14 +52,19 @@
                 <li><a class="dropdown-item"href="./Paginas/playlist.html">playlist</a></li>
             </ul>
           </div>
+        </div>
     </nav>
 
 </header>
-
-    <h1 class="titulo2">Inicio</h1>
-
+<main class="mainHome">
+    <h1 class="homeTitle">Inicio</h1>
+<section class="homeFlex">
+ 
+    <div >
+        <img src="Imagenes/14-800x445.jpg" alt="Integrantes de Cuarteto de nos" class="animate__animated  animate__jackInTheBox animate__slower">
+    </div>
+    <div>
     <h2>El Cuarteto de Nos</h2>
-
     <p>El Cuarteto de Nos es una banda de rock Uruguayo formado en 1980. Esta inegrada por el cantante Roberto Musso, el
         bajista Santiago Tavella, el baterista Alvaro Pintos, el guitarrista y corista Gustavo Antuña y el tecladista
         Santiago Marrero.</p>
@@ -86,16 +89,15 @@
         discografia. En este punto la banda se afilio a una reinvencion, combinando la musica hip-hop, con elementos pop;
         esto se ve reflejado en lanzamientos anteriores como porfiado (2012), habla tu espejo (2014), apocalipsis zombi
         (2017), Jueves (2019), y Lamina once (2022)</p>
+    </div>
 
-    <main>
 
         <!--Imagen-->
-        <div class="containerLefth">
-        <img src="Imagenes/14-800x445.jpg" alt="Integrantes de Cuarteto de nos" class="animate__animated  animate__jackInTheBox animate__slower">
-    </div>
+
+</section>
     </main>
 
-    <footer>
+    <footer class="bg-footer">
         <section>
         <nav class="header-desktop">
             <ul>
@@ -108,7 +110,7 @@
         </div>
         </nav>
     </section>
-        <nav class="header-responsive">
+        <nav class="bg-footer header-responsive">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                   menu desplegable

@@ -1,4 +1,4 @@
-@media screen and (min-width:1020px) {
+@media screen and (max-width:1920px) {
     .containerLefth{
         display: flex;
         flex-direction: row;
@@ -11,14 +11,10 @@
         width: 650px;
         height: 500px;
     }
-    .fondoLila{
-        height: 500px;
-        width: auto;
-    }
+
     .header-responsive {
         visibility: hidden;
-        width: 0px;
-        height: 0px;
+        
     }
 }
 
@@ -31,11 +27,8 @@
         display: flex;
         flex-direction: column;
     }
-    .fondoLila{
-        height: 150px;
-        width: auto;
-    }
-    .header-desktop {
+
+    .navDeskt {
         visibility: hidden;
         width: 0px;
         height: 0px;
@@ -47,14 +40,14 @@
     max-height: 150px;
 }
 ul li {
-    margin-top: 0px;
+   
     padding: 1rem;
     font-size: 15px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    text-decoration: underline;
-    text-decoration-color: aquamarine;
+ 
+    text-decoration-color: black;
     text-transform: capitalize;
 }
 a {
@@ -66,7 +59,7 @@ a {
 }
 }
 
-@media screen and (min-width: 540px){
+@media screen and (max-width: 540px){
     .containerLefth{
         display: flex;
         flex-direction: row;
@@ -79,27 +72,19 @@ a {
         width: 400px;
         height: 500px;
     }
-    .fondoLila{
-        height: 400px;
-    }
-    ul li {
-        margin-top: 30rem;
-        padding: 1rem;
-        font-size: 15px;
 
-        border-radius: 15px;
-        text-decoration: underline;
-        text-decoration-color: aquamarine;
-        text-transform: capitalize;
-    }
-    a {
-        font-size: 15px;
-     
-    }
+
     .header-responsive {
+        visibility: visible;
+
+    }
+    .navDeskt{
         visibility: hidden;
-        width: 0px;
-        height: 0px;
+        width: 0%;
+    }
+    .homeFlex {
+        display: flex;
+        flex-direction: column;
     }
 }
 

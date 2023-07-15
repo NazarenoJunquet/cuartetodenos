@@ -3,72 +3,133 @@
 @import "animate";
 
 /*configuracion de html*/
-html{
-    font-size: 62.5%; /*YA NO ES EL 100%*/
+html {
+    font-size: 62.5%;
+    /*YA NO ES EL 100%*/
 }
 
-p{
-    font-size: 10px; /*YA NO ES 16PX*/
-}
-
-.fondoLila{
-    /*background-color: lightcoral;*/
-    background-image: url("../Imagenes/cuarteto\ de\ nos.jpg");
-    background-size: cover;
-    height:500px;
-}
-
-ul{margin-bottom: 2rem;
-    padding-bottom:  2rem;
-    }
-    ul li{
-        list-style-type: circle;
-        font-weight: bold; 
-        font-size: 3rem;
-        display: inline-block;
-        margin-top: 38rem;
-        padding: 4rem;
-    }
-
-    h1{
-        font-family: prompt;
-        font-weight: 900;
-        font-size: 4rem ;
-        text-align: center;
-    }
-    a{
-        text-decoration: none;
-        font-size: 4rem;
-    &:active{
-        text-decoration-color: red;
-        color: red
-    }
-}
 p {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #000;
+    font-size: 1.3rem;
+    /*YA NO ES 16PX*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.img-biografias{
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+h2 {
+    text-align: left;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+footer {
+    background-color: #E8E8E8;
+}
+
+
+header {
+    background-color: #E8E8E8;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.img-biografias {
     width: 400px;
 }
 
-    .container div{
-        display: flex;
-        padding: 0px 10px 15px 10px;
-    }
-    div, img, p, h2{
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    div div{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .container1{
-        display: flex;
-        flex-direction: row;
-    }
+.container div {
+    display: flex;
+
+}
+
+div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+
+    padding: 1rem;
+    font-size: 15px;
+
+
+
+
+    text-transform: capitalize;
+}
+
+a {
+    font-size: 15px;
+
+}
+
+.homeFlex {
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.homeFlex div {}
+
+.homeTitle {
+    padding: 25px 0 25px 0;
+}
+
+.centerDiv {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerDiv p {
+    text-align: center;
+}
+
+.titulo2 {
+    font-size: 3rem;
+    padding: 15px 0 15px 0;
+}
+
+h1, h2, p, li {
+    font-family: 'Prompt';
+
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}

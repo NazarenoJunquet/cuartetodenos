@@ -18,7 +18,7 @@ div div {
   flex-direction: row;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (max-width: 1920px) {
   .containerLefth {
     display: flex;
     flex-direction: row;
@@ -31,14 +31,8 @@ div div {
     width: 650px;
     height: 500px;
   }
-  .fondoLila {
-    height: 500px;
-    width: auto;
-  }
   .header-responsive {
     visibility: hidden;
-    width: 0px;
-    height: 0px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -50,11 +44,7 @@ div div {
     display: flex;
     flex-direction: column;
   }
-  .fondoLila {
-    height: 150px;
-    width: auto;
-  }
-  .header-desktop {
+  .navDeskt {
     visibility: hidden;
     width: 0px;
     height: 0px;
@@ -65,14 +55,12 @@ div div {
     max-height: 150px;
   }
   ul li {
-    margin-top: 0px;
     padding: 1rem;
     font-size: 15px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    text-decoration: underline;
-    text-decoration-color: aquamarine;
+    text-decoration-color: black;
     text-transform: capitalize;
   }
   a {
@@ -82,7 +70,7 @@ div div {
     width: 100%;
   }
 }
-@media screen and (min-width: 540px) {
+@media screen and (max-width: 540px) {
   .containerLefth {
     display: flex;
     flex-direction: row;
@@ -95,25 +83,16 @@ div div {
     width: 400px;
     height: 500px;
   }
-  .fondoLila {
-    height: 400px;
-  }
-  ul li {
-    margin-top: 30rem;
-    padding: 1rem;
-    font-size: 15px;
-    border-radius: 15px;
-    text-decoration: underline;
-    text-decoration-color: aquamarine;
-    text-transform: capitalize;
-  }
-  a {
-    font-size: 15px;
-  }
   .header-responsive {
+    visibility: visible;
+  }
+  .navDeskt {
     visibility: hidden;
-    width: 0px;
-    height: 0px;
+    width: 0%;
+  }
+  .homeFlex {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
@@ -127,55 +106,59 @@ div div {
 
 /*configuracion de html*/
 html {
-  font-size: 62.5%; /*YA NO ES EL 100%*/
+  font-size: 62.5%;
+  /*YA NO ES EL 100%*/
 }
 
 p {
-  font-size: 10px; /*YA NO ES 16PX*/
-}
-
-.fondoLila {
-  /*background-color: lightcoral;*/
-  background-image: url("../Imagenes/cuarteto de nos.jpg");
-  background-size: cover;
-  height: 500px;
-}
-
-ul {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-}
-
-ul li {
-  list-style-type: circle;
-  font-weight: bold;
-  font-size: 3rem;
-  display: inline-block;
-  margin-top: 38rem;
-  padding: 4rem;
+  font-size: 1.3rem;
+  /*YA NO ES 16PX*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  font-family: prompt;
-  font-weight: 900;
-  font-size: 4rem;
   text-align: center;
+  font-size: 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-  font-size: 4rem;
+h2 {
+  text-align: left;
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
-a:active {
-  text-decoration-color: red;
+
+footer {
+  background-color: #E8E8E8;
+}
+
+header {
+  background-color: #E8E8E8;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  text-decoration: none;
   color: red;
 }
 
-p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #000;
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 .img-biografias {
@@ -184,12 +167,6 @@ p {
 
 .container div {
   display: flex;
-  padding: 0px 10px 15px 10px;
-}
-
-div, img, p, h2 {
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 div div {
@@ -200,6 +177,50 @@ div div {
 .container1 {
   display: flex;
   flex-direction: row;
+}
+
+ul li {
+  padding: 1rem;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+a {
+  font-size: 15px;
+}
+
+.homeFlex {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.homeTitle {
+  padding: 25px 0 25px 0;
+}
+
+.centerDiv {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerDiv p {
+  text-align: center;
+}
+
+.titulo2 {
+  font-size: 3rem;
+  padding: 15px 0 15px 0;
+}
+
+h1, h2, p, li {
+  font-family: "Prompt";
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
