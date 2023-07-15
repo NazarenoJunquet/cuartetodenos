@@ -103,9 +103,6 @@ a {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
-
-.homeFlex div {}
-
 .homeTitle {
     padding: 25px 0 25px 0;
 }
@@ -125,10 +122,14 @@ a {
     padding: 15px 0 15px 0;
 }
 
-h1, h2, p, li {
+h1,
+h2,
+p,
+li {
     font-family: 'Prompt';
 
 }
+
 .flexColumn {
     display: flex;
     flex-direction: column;

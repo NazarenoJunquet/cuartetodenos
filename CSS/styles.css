@@ -214,7 +214,10 @@ a {
   padding: 15px 0 15px 0;
 }
 
-h1, h2, p, li {
+h1,
+h2,
+p,
+li {
   font-family: "Prompt";
 }
 
